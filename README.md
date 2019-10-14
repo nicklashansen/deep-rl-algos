@@ -6,7 +6,7 @@ If you're unfamiliar with deep reinforcement learning, check out this survey for
 
 ### Algorithms
 
-This repository contains implementations of the following deep RL algorithms: REINFORCE (policy gradient), DQN (deep Q-network), DDQN (dualing deep Q-networks) and Actor-Critic (a combination of the two). Each algorithm has been implemented in a separate executible python script that can be run directly from the terminal:
+This repository contains implementations of the following deep RL algorithms: ```REINFORCE``` (policy gradient), ```DQN``` (deep Q-network), ```DDQN``` (dualing deep Q-networks) and ```Actor-Critic``` (a combination of the two). Each algorithm has been implemented in a separate executible python script that can be run directly from the terminal:
 
 ```
 python REINFORCE.py --env Pong-v0 --num_episodes 10000
@@ -18,10 +18,12 @@ If you inspect the scripts, you will find a number of other hyper-parameters tha
 Experiments have been conducted on the ```CartPole-v0```, ```LunarLander-v2```, ```Pong-v0``` and ```BreakoutDeterministic-v4``` environments. CartPole-v0 and LunarLander-v2 are solved in a few minutes while Pong-v0 takes roughly 16 hours on a single thread equipped with a Tesla V100. BreakoutDeterministic-v4 remains unsolved but the repository contains code that should be able to solve the environment eventually given enough time.
 Below is a few GIFs showcasing REINFORCE and DQN on LunarLander-v2.
 
-REINFORCE vs. LunarLander-v2
+**REINFORCE vs. LunarLander-v2**
+
 ![reinforce-lunarlander](https://i.imgur.com/Q7GioKq.gif)
 
-DQN vs. LunarLander-v2
+**DQN vs. LunarLander-v2**
+
 ![dqn-lunarlander](https://i.imgur.com/4FGK7X5.gif)
 
 ### Where to go from here?
